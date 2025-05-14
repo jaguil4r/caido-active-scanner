@@ -1,0 +1,61 @@
+.c-queue-row {
+  display: flex;
+  align-items: center;
+  padding: var(--c-spacing-1) var(--c-spacing-2);
+  border-radius: var(--c-border-radius);
+  cursor: pointer;
+  gap: var(--c-spacing-2);
+  border-bottom: 1px solid var(--c-divider);
+}
+
+.c-queue-row:hover {
+  background-color: var(--c-hover-bg);
+}
+
+.c-queue-url {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--c-font-mono);
+  font-size: 0.9em;
+}
+
+.c-queue-status {
+  padding: 2px var(--c-spacing-1);
+  border-radius: var(--c-border-radius-small);
+  font-size: 0.8em;
+  font-weight: bold;
+  flex-shrink: 0;
+  color: var(--c-text-secondary);
+  min-width: 70px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.c-status-queued {
+  background-color: var(--c-bg-tertiary, #EEEEEE);
+  color: var(--c-text-secondary, #616161);
+}
+
+.c-status-running {
+  background-color: var(--c-info-bg, #E3F2FD);
+   color: var(--c-info, #039BE5);
+}
+
+.c-status-completed {
+  background-color: var(--c-success-bg, #E8F5E9);
+   color: var(--c-success, #43A047);
+}
+
+.c-status-error {
+  background-color: var(--c-danger-bg, #FFEBEE);
+   color: var(--c-danger, #E53935);
+}
+
+.c-queue-progress {
+    font-size: 0.8em;
+    color: var(--c-text-secondary);
+    margin-left: auto;
+    padding-left: var(--c-spacing-2);
+} 

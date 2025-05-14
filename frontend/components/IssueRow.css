@@ -1,0 +1,72 @@
+.c-issue-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: var(--c-spacing-1) var(--c-spacing-2);
+  border-radius: var(--c-border-radius);
+  cursor: pointer;
+  gap: var(--c-spacing-2);
+  border-bottom: 1px solid var(--c-divider);
+}
+
+.c-issue-row:hover {
+  background-color: var(--c-hover-bg);
+}
+
+.c-issue-details {
+    overflow: hidden; /* Prevents long text from breaking layout */
+}
+
+.c-issue-title {
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c-issue-url {
+  font-family: var(--c-font-mono);
+  color: var(--c-text-secondary);
+  font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c-severity-badge {
+  padding: 2px var(--c-spacing-1);
+  border-radius: var(--c-border-radius-small);
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: center;
+  min-width: 60px; /* Adjust as needed */
+  color: white; /* Default text color, override below if needed */
+  margin-right: var(--c-spacing-2);
+  text-transform: uppercase;
+}
+
+/* Define colors using Caido variables or fallbacks */
+.c-severity-critical {
+  background-color: var(--c-critical-bg, #B71C1C); /* Dark Red */
+  color: var(--c-critical-fg, white);
+}
+
+.c-severity-high {
+  background-color: var(--c-danger-bg, #E53935); /* Red */
+  color: var(--c-danger-fg, white);
+}
+
+.c-severity-medium {
+  background-color: var(--c-warning-bg, #FFB300); /* Amber/Orange */
+  color: var(--c-warning-fg, #424242); /* Dark Grey text for contrast */
+}
+
+.c-severity-low {
+  background-color: var(--c-info-bg, #039BE5);    /* Blue */
+  color: var(--c-info-fg, white);
+}
+
+.c-severity-info {
+  background-color: var(--c-success-bg, #43A047); /* Green */
+  color: var(--c-success-fg, white);
+} 
