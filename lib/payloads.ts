@@ -15,7 +15,6 @@ export const SQLI_PAYLOADS: string[] = [
     "' OR '1'='1' -- ",
     "' OR '1'='1' # ",
     "\" OR \"1\"=\"1\" -- ",
-    "1; DROP TABLE users --",
 
     // TODO: Add boolean-based, time-based, error-based, UNION-based SQLi payloads for different DBs
 ];
