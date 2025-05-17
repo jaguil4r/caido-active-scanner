@@ -21,11 +21,8 @@
     "noFallthroughCasesInSwitch": true,
 
     /* Aliases */
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./*"]
-    }
+    "baseUrl": "."
   },
-  "include": ["frontend", "backend", "lib", "caido.config.ts"],
+  "include": ["packages/*/src", "packages/*/public", "caido.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 } 
